@@ -1,0 +1,26 @@
+body {
+	font-size: 19px;
+	line-height: 31px;
+	width: 920px;
+	margin: 0 auto;
+}
+p {
+	text-align: justify;
+}
+h1#title{
+	text-transform: uppercase;
+	font-weight: bold;
+	text-align: center;
+}
+.slogan {
+	text-align: center;
+}
+.uppercase {
+	text-transform: uppercase;
+}
+p.indent {
+	text-indent: 30px;
+}
+.floatright p {
+	text-align: right;
+}
