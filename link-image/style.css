@@ -1,0 +1,12 @@
+body {
+	box-sizing: border-box;
+	font-size: 18px;
+	line-height: 31px;
+}
+#wrap {
+	width: 1080px;
+	margin: 0 auto;
+}
+#main-box {
+	margin-bottom: 600px; 
+}
