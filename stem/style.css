@@ -148,7 +148,11 @@ h2.sub-title {
 	font-size: 20px;
 	color: white;
 }
-#dang-ky {background: #3379b7;color: white;padding: 10px 20%;}
+#dang-ky {
+    background: #ffffff;
+    color: #3379b7;
+    padding: 10px;
+}
 .input-text {margin: 20px 0;}
 input.form-dk {
 	background-color: rgba(2, 2, 2, .2);
