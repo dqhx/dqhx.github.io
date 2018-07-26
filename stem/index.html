@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>STEM</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="wrap">
+	<header>
+		<div id="top-header">
+			<div id="logo">
+				<a href="/"><img src="img/logo.png" alt="logo"/></a>
+			</div>
+			<div class="nav-button"><i class="fas fa-bars"></i></div>
+			<nav id="top-nav">
+				<ul class="menu">
+                    <li class="menu-item">
+                        <a href="#trangchu">Trang chủ</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#thong-tin">Mô tả sự kiện</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#chuong-trinh">Chương trình</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#dien-gia">Diễn giả</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#dang-ky">Đăng ký</a>
+                    </li>
+                </ul>
+			</nav>
+		</div>
+		<div id="banner">
+			<div class="text-banner">
+				<p>thứ 7, 28/7/2018</p>
+				<p class="title">Tech Robot STEM 2018</p>
+				<p id="countdown"></p>
+				<script>
+					// Set the date we're counting down to
+					var countDownDate = new Date("Jul 28, 2018 15:37:25").getTime();
+
+					// Update the count down every 1 second
+					var x = setInterval(function() {
+
+					    // Get todays date and time
+					    var now = new Date().getTime();
+					    
+					    // Find the distance between now an the count down date
+					    var distance = countDownDate - now;
+					    
+					    // Time calculations for days, hours, minutes and seconds
+					    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+					    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+					    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+					    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+					    
+					    // Output the result in an element with id="demo"
+					    document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+					    + minutes + "m " + seconds + "s ";
+					    
+					    // If the count down is over, write some text 
+					    if (distance < 0) {
+					        clearInterval(x);
+					        document.getElementById("countdown").innerHTML = "EXPIRED";
+					    }
+					}, 1000);
+					</script>
+				<p><a class="btn btn-primary btn-lg" href="#dang-ky" role="button">Đăng ký ngay</a></p>
+			</div>
+			
+		</div>
+	</header>
+	<section id="thong-tin">
+		<div class="event-info">
+			<h2><i class="fas fa-info-circle"></i> Tech Robot STEM 2018</h2>
+			<h3>Demo về STEM, Robot (Lego), Arduino</h3>
+			<hr>	
+            <p> Thứ 7, 28/7/2018 2:30 đến 5:30 chiều</p>
+            <p>Địa điểm: Bishub.vn, Số 142B Đê La Thành, P.Thổ Quan, Q.Đống Đa, Hà Nội ( 360 Xã Đàn rẽ vào 10m)</p>
+            <p><a class="btn btn-primary btn-lg" href="#dang-ky" role="button">Đăng ký ngay</a></p>
+		</div>
+		<div class="event-img">
+			<img src="img/event.jpg" alt="Tech Robot STEM 2018">
+		</div>
+	</section>
+	<section id="chuong-trinh">
+		<h2 class="sub-title"><i class="fas fa-pen-square"></i> Nội dung chương trình</h2><hr>
+		<div class="time_icon">
+            <i class="fa fa-check-circle"></i>
+            <b>2:30-2:45 </b><span> Guests</span>
+        </div>
+        <div class="time_icon">
+            <i class="fa fa-check-circle"></i>
+            <b>2:45-3:15 </b><span>Programming Arduino using Scratch -- presented by Mr. Dũng, trainer of Techmaster</span>
+        </div>
+        <div class="time_icon">
+            <i class="fa fa-check-circle"></i>
+            <b>3:20-3:50 </b>
+            <span>Lego FIRST competition -- presented by you</span>
+        </div>
+                                   
+        <div class="time_icon">
+            <i class="fa fa-check-circle"></i>
+            <b>3:50 - 4:20 </b><span>How to do airplane - tank modeling - presented by Mr. Phuong, airplane modeler, Mr. Dũng tank modeler</span>
+        </div>
+	</section>
+	<section id="demo-hinhanh">
+		<h2 class="sub-title"><i class="fas fa-robot"></i> Hình ảnh Robot Demo</h2><hr>
+		<div class="hinhanh">
+			<div class="sub-img">
+				<img src="img/anh1.jpg" alt="" />
+				<div class="overlay"></div>
+				<p class="text-anh">Robot quét nhà</p>
+			</div>
+			<div class="sub-img">
+				<img src="img/anh2.jpg" alt="" />
+				<div class="overlay"></div>
+				<p class="text-anh">Robot quét nhà</p>
+			</div>
+			<div class="sub-img">
+				<img src="img/anh3.jpg" alt="" />
+				<div class="overlay"></div>
+				<p class="text-anh">Robot khủng long</p>
+			</div>
+			<div class="sub-img">
+				<img src="img/anh4.jpg" alt="" />
+				<div class="overlay"></div>
+				<p class="text-anh">Robot gắp hàng</p>
+			</div>
+			<div class="sub-img">
+				<img src="img/anh5.jpg" alt="" />
+				<div class="overlay"></div>
+				<p class="text-anh">Robot bắn laze</p>
+			</div>
+			<div class="sub-img">
+				<img src="img/anh6.jpg" alt="" />
+				<div class="overlay"></div>
+				<p class="text-anh">Robot đo khoảng cách</p>
+			</div>
+			<div class="sub-img">
+				<img src="img/anh1.jpg" alt="" />
+				<div class="overlay"></div>
+				<p class="text-anh">Robot quét nhà</p>
+			</div>
+			<div class="sub-img">
+				<img src="img/anh6.jpg" alt="" />
+				<div class="overlay"></div>
+				<p class="text-anh">Robot quét nhà</p>
+			</div>
+			<div class="sub-img">
+				<img src="img/anh5.jpg" alt="" />
+				<div class="overlay"></div>
+				<p class="text-anh">Robot quét nhà</p>
+			</div>
+			<div class="sub-img">
+				<img src="img/anh4.jpg" alt="" />
+				<div class="overlay"></div>
+				<p class="text-anh">Robot quét nhà</p>
+			</div>
+			<div class="sub-img">
+				<img src="img/anh3.jpg" alt="" />
+				<div class="overlay"></div>
+				<p class="text-anh">Robot quét nhà</p>
+			</div>
+			<div class="sub-img">
+				<img src="img/anh2.jpg" alt="" />
+				<div class="overlay"></div>
+				<p class="text-anh">Robot quét nhà</p>
+			</div>
+		</div>
+	</section>
+	<section id="dien-gia">
+		<h2 class="sub-title"><i class="fas fa-volume-up"></i> Diễn giả tại chương trình</h2><hr>
+		<div id="diengia-box">
+			<div class="diengia-img">
+				<img src="img/1.jpg">
+			</div>
+			<div class="diengia-info">
+				<h3>Mr. Dũng</h3>
+				<p>Giảng viên điện tử tin học, tu nghiệp tại Nhật Bản và Úc. Trainer of Techmaster - Dạy lập trình Arduino Scratch Snap cho đối tượng thiếu nhi. </p>
+			</div>
+		</div>
+		<div id="diengia-box">
+			<div class="diengia-img">
+				<img src="img/1.jpg">
+			</div>
+			<div class="diengia-info">
+				<h3>Mr. Bình Minh</h3>
+				<p>Sinh viên người Việt Nam đang du học tại Mỹ - Giới thiệu giải đấu First Lego League ( similar with robocon in Việt Nam) </p>
+			</div>
+		</div>
+		<div class="clear"></div>
+		<div id="diengia-box">
+			<div class="diengia-img">
+				<img src="img/1.jpg">
+			</div>
+			<div class="diengia-info">
+				<h3>Mr. Thế Phương</h3>
+				<p>Trình bày Cách chế tạo và chơi máy bay mô hình</p>
+			</div>
+		</div>
+		<div id="diengia-box">
+			<div class="diengia-img">
+				<img src="img/1.jpg">
+			</div>
+			<div class="diengia-info">
+				<h3>Mr. Dũng</h3>
+				<p>Kỹ sư thiết kế mẫu, 3D lâu năm - Trình bày các bước tạo mẫu, in 3D chi tiết một chiếc xe thiết giáp mô hình.  </p>
+			</div>
+		</div>
+	</section>
+	<section id="dang-ky">
+		<h2>Đăng ký tham dự</h2>
+		<div class="input-text">
+			<input type="text" name="name" class="form-dk" size="50%" value="Họ và tên bạn" onblur="if (this.value == '') {this.value = 'Họ và tên bạn';}" onfocus="if (this.value == 'Họ và tên bạn') {this.value = '';}">
+		</div>
+		<div class="input-text">
+			<input type="text" name="name" class="form-dk" size="50%" value="Nhập số điện thoại ..." onblur="if (this.value == '') {this.value = 'Nhập số điện thoại ...';}" onfocus="if (this.value == 'Nhập số điện thoại ...') {this.value = '';}">
+		</div>
+		<div class="input-text">
+			<input type="text" name="name" class="form-dk" size="50%" value="Nhập thông tin Email ....." onblur="if (this.value == '') {this.value = 'Nhập thông tin Email .....';}" onfocus="if (this.value == 'Nhập thông tin Email .....') {this.value = '';}">
+		</div>
+		<p><a class="btn btn-tucss btn-lg" href="" role="button">Đăng ký ngay</a></p>
+	</section>
+	<section id="ban-do">
+		<div class="diachi">
+			<h2>Địa điểm tổ chức</h2>
+			<p>Bishub.vn, Số 142B Đê La Thành, P.Thổ Quan, Q.Đống Đa, Hà Nội ( 360 Xã Đàn rẽ vào 10m)</p>
+		</div>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.4445693234916!2d105.83200395053817!3d21.014890493558784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab1380098dc9%3A0x3f5bfd52e0696708!2sBisHub-Coworking+Space!5e0!3m2!1sen!2s!4v1532587392681" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+	</section>
+	<p id="copyright">&copy; Techmaster.vn</p>
+</div>
+
+</body>
+</html>
