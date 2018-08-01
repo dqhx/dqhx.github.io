@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Co-working Space</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans" />
+</head>
+<body>
+<div id="wrap">
+	<header>
+<!--Top Header-->
+		<div id="top-header">
+			<div id="logo">
+				<a href="#" title="Trang chủ"><img src="img/logo.png"></a>
+			</div>
+			<nav id="primary-menu">
+				<ul id="top-nav">
+					<li><a href="">Trang chủ</a></li>
+					<li><a href="">About</a></li>
+					<li><a href="">Gói thành viên</a></li>
+					<li><a href="">Sự kiện</a></li>
+					<li><a href="">Không gian</a></li>
+					<li><a href="">Liên hệ</a></li>
+					<li><a href="">Blog</a></li>
+				</ul>
+			</nav>
+			<div id="mobile-menu-button" onclick="menumobile()">
+				<i class="fas fa-bars"><span class="menu-button"></span></i>
+			</div>
+		</div>
+<!--END Top Header-->
+<!--Banner HEADER-->
+		<div id="big-banner">
+			<div class="banner-text">	
+				<h2>iHOUSE COWORKING</h2>
+				<p>WORKING IS RELAXING</p>
+				<a class="buttonlink" href="#" title="Trải nghiệm miễn phí">Trải nghiệm miễn phí</a>
+			</div>
+		</div>
+<!--END Banner HEADER-->
+	</header>
+	<div id="mobile-menu">
+			<ul id="mobile-ul">
+					<li><a href="">Trang chủ</a></li>
+					<li><a href="">About</a></li>
+					<li><a href="">Gói thành viên</a></li>
+					<li><a href="">Sự kiện</a></li>
+					<li><a href="">Không gian</a></li>
+					<li><a href="">Liên hệ</a></li>
+					<li><a href="">Blog</a></li>
+					<li><a href="">Trải nghiệm miễn phí</a></li>
+				</ul>
+		</div>
+		<script>
+				function menumobile() {
+					var mobilemenu = document.getElementById("mobile-menu");
+					mobilemenu.classList.toggle("open");
+				}
+		</script>
+<!-- WHAT IS CO WORKING SPACE? -->
+	<section id="coworking-space">
+		<div id="about-us">
+			<h1 class="blocktitle">Không gian làm việc độc đáo tại Hà Nội</h1>
+			<p>iHouse Coworking là một không gian làm việc mở với chi phí vừa túi tiền, đồng thời cũng là một cộng đồng freelancers thân thiện, đầy sáng tạo và sức sống.</p>
+		</div>
+		<div class="slideshow-container">
+		  	<div class="mySlides faded" style="display: none;">
+		    	<img src="img/slider/DSC00984-1660x1600.jpg" style="width:100%">
+		 	</div>
+		  	<div class="mySlides faded" style="display: block;">
+		    	<img src="img/slider/DSC00986-1660x1600.jpg" style="width:100%">
+		  	</div>
+		  	<div class="mySlides faded" style="display: none;">
+		    	<img src="img/slider/IMG_7249-1660x1600.jpg" style="width:100%">
+		 	</div>
+		  	<div class="mySlides faded" style="display: block;">
+		    	<img src="img/slider/DSC00962-1660x1600.jpg" style="width:100%">
+		  	</div>
+		  	<div class="mySlides faded" style="display: none;">
+		    	<img src="img/slider/DSC01116-1660x1600.jpg" style="width:100%">
+		 	</div>
+		  	<div class="mySlides faded" style="display: block;">
+		    	<img src="img/slider/DSC01165-1660x1600.jpg" style="width:100%">
+		  	</div>
+		  	<div class="mySlides faded" style="display: none;">
+		    	<img src="img/slider/YDXJ0072-1660x1600.jpg" style="width:100%">
+		 	</div>
+		  	<div class="mySlides faded" style="display: block;">
+		    	<img src="img/slider/IMG_7357-1660x1600.jpg" style="width:100%">
+		  	</div>
+		  	<div class="mySlides faded" style="display: none;">
+		    	<img src="img/slider/YDXJ0353-1660x1572.jpg" style="width:100%">
+		 	</div>
+		  	<div class="mySlides faded" style="display: block;">
+		    	<img src="img/slider/YDXJ0352-1660x1600.jpg" style="width:100%">
+		  	</div>
+		  	<!-- Next and previous buttons -->
+		  	<a class="prev" onclick="plusSlides(-1)">❮</a>
+		  	<a class="next" onclick="plusSlides(1)">❯</a>
+		  <!-- The dots/circles -->
+			<div class="dotstyle">
+			  	<span class="dot" onclick="currentSlide(1)"></span> 
+			  	<span class="dot active" onclick="currentSlide(2)"></span> 
+			  	<span class="dot" onclick="currentSlide(3)"></span> 
+			</div>
+		</div>
+		<script src="js/slideshow.js"></script>
+	</section>
+	<div class="clear"></div>
+	<div class="ads720x90" style="color: white;text-align: center;padding-top: 25px;"># Ads 1000x90</div>
+<!-- TIEN ICH CO BAN -->
+	<section id="tien-ich">
+		<h3 class="blocktitle">Tiện ích đầy đủ</h3>
+		<div class="benefitswrap">
+			<div class="benefititem">
+				<i class="fas fa-chalkboard-teacher"></i>
+				<p>Phòng họp hiện đại</p>
+			</div>
+			<div class="benefititem">
+				<i class="fas fa-wifi"></i>
+				<p>Wifi tốc độ cao</p>
+			</div>
+			<div class="benefititem">
+				<i class="fas fa-video"></i>
+				<p>Máy chiếu</p>
+			</div>
+			<div class="benefititem">
+				<i class="fas fa-print"></i>
+				<p>Máy in, scan và văn phòng phẩm</p>
+			</div>
+			<div class="benefititem">
+				<i class="fas fa-coffee"></i>
+				<p>Bếp tiện nghi (trà & cafe miễn phí)</p>
+			</div>
+			<div class="benefititem">
+				<i class="fas fa-share-alt-square"></i>
+				<p>Miễn phí tham dự hội thảo</p>
+			</div>
+			<div class="benefititem">
+				<i class="fas fa-gamepad"></i>
+				<p>Khu vực giải trí, thư giãn</p>
+			</div>
+			<div class="benefititem">
+				<i class="fas fa-leaf"></i>
+				<p>Nghĩ ngơi giữa không gian cây xanh</p>
+			</div>
+		</div>
+	</section>
+<!-- Book Tour tham quan -->
+	<section id="book-a-tour">
+		<div class="overlay"></div>
+		<div class="banner-text resize-text">
+			<p style="text-transform: uppercase;">Trải nghiệm không gian<br>iHouse Co-working</p>
+			<p>Hãy đến và cảm nhận!</p>
+			<a class="buttonlink" href="#" title="Trải nghiệm miễn phí">Trải nghiệm miễn phí</a>
+		</div>
+	</section>
+
+<!-- GOI THANH VIEN -->
+	<section id="price-plans">
+		<div class="planswrap">
+			<h3 class="blocktitle">Gói thành viên</h3>
+			<div class="planitem">
+				<div class="price_block price_block_style_2">
+					<div class="price_block_title"><span>Daily</span></div>
+					<div class="price_block_money">
+						<div class="price"><span class="price_currency"><sup>$</sup></span><span class="price_money">80.000 VND</span><span>/ngày</span></div>
+					</div>
+					<div class="price_block_description">
+					<ul class="checklist">
+						<li><i class="fas fa-check"></i> Working time: From 8:30 to 18:30</li>
+						<li><i class="fas fa-check"></i> High speed Internet connection</li>
+						<li><i class="fas fa-check"></i> Free drinks and coffee (self-service)</li>
+						<li><i class="fas fa-check"></i> Tranquil working environment</li>
+						<li><i class="fas fa-check"></i> Printers, scanners and stationary</li>
+						<li><i class="fas fa-check"></i> Free usage of meeting room</li>
+						<li><i class="fas fa-check"></i> Special pack 05 days 450.000đ</li>
+					</ul>
+					</div>
+					<div class="price_block_link"><a href="#" class="buttonlink"">Đăng ký</a></div>
+				</div>
+			</div>
+			<div class="planitem">
+				<div class="price_block price_block_style_1">
+					<div class="price_block_title"><span>Freelancer</span></div>
+					<div class="price_block_money">
+						<div class="price"><span class="price_currency"><sup>$</sup></span><span class="price_money">1.400.000 VND</span><span>/tháng</span></div>
+					</div>
+					<div class="price_block_description">
+					<ul class="checklist">
+						<li><i class="fas fa-check"></i> Working time: From 8:30 to 18:30</li>
+						<li><i class="fas fa-check"></i> High speed Internet connection</li>
+						<li><i class="fas fa-check"></i> Free drinks and coffee (self-service)</li>
+						<li><i class="fas fa-check"></i> Tranquil working environment</li>
+						<li><i class="fas fa-check"></i> Printers, scanners and stationary</li>
+						<li><i class="fas fa-check"></i> Free usage of meeting room</li>
+						<li><i class="fas fa-check"></i> Special pack 03 months 3.950.000đ</li>
+					</ul>
+					</div>
+					<div class="price_block_link"><a href="#" class="buttonlink"">Đăng ký</a></div>
+				</div>
+			</div>
+			<div class="planitem">
+				<div class="price_block price_block_style_2">
+					<div class="price_block_title"><span>Phòng Studio</span></div>
+					<div class="price_block_money">
+						<div class="price"><span class="price_currency"><sup>$</sup></span><span class="price_money">8.460.000 VND</span><span>/tháng</span></div>
+					</div>
+					<div class="price_block_description">
+					<ul class="checklist">
+						<li><i class="fas fa-check"></i> 04-08 table available</li>
+						<li><i class="fas fa-check"></i> Working time: From 8:30 to 18:30</li>
+						<li><i class="fas fa-check"></i> High speed Internet connection</li>
+						<li><i class="fas fa-check"></i> Free drinks and coffee (self-service)</li>
+						<li><i class="fas fa-check"></i> Tranquil working environment</li>
+						<li><i class="fas fa-check"></i> Printers, scanners and stationary</li>
+						<li><i class="fas fa-check"></i> Free usage of meeting room</li>
+						<li><i class="fas fa-check"></i> Free print 500 pages</li>
+						<li><i class="fas fa-check"></i> Special pack 03 months 22.650.000đ</li>
+					</ul>
+					</div>
+					<div class="price_block_link"><a href="#" class="buttonlink"">Đăng ký</a></div>
+				</div>
+			</div>
+		</div>
+	</section>
+<!-- HINH ANH KHONG GIAN -->
+	<section id="gallery">
+		
+	</section>
+<!-- SU KIEN -->
+	<section id="book-a-tour">
+		<div class="overlay"></div>
+		<div class="banner-text resize-text">
+			<p style="text-transform: uppercase;">CHO THUÊ HỘI THẢO LỚN<br>PHÒNG HỌP VÀ PHÒNG HỌC 50-150 CHỖ.</p>
+		</div>
+	</section>
+<!-- BLOG -->
+	<section id="blog">
+		<h3 class="blocktitle">BLog</h3>
+		<div class="blog-wrap">
+			<div class="blog-item">
+			<a href="#">
+				<div class="blog-image">
+					<span class="image-post" data-image="img/blog/blog-1.jpg" style="background-image: url(img/blog/blog-1.jpg);"></span>
+				</div>
+				<div class="blog-text">
+					<div class="blog-title">
+						<h4>Bạn muốn tập trung ? Hãy đến Coworking Space</h4>
+					</div>
+					<span class="date">02/08/2018</span>
+					<div class="blog-description">
+						<p>Khi làm việc ở nhà, bạn rất dễ bị xao lãng và mất tập trung. Bạn đang ngồi phân tích số liệu thì rất dễ ngủ luôn lúc nào không biết […]</p>
+					</div>
+				</div>
+			</a>
+			</div>
+			<div class="blog-item">
+			<a href="#">
+				<div class="blog-image">
+					<span class="image-post" data-image="img/blog/blog-1.jpg" style="background-image: url(img/blog/blog-2.jpg);"></span>
+				</div>
+				<div class="blog-text">
+					<div class="blog-title">
+						<h4>4 lý do vì sao Networking lại quan trọng với startup</h4>
+					</div>
+					<span class="date">02/08/2018</span>
+					<div class="blog-description">
+						<p>Hình ảnh của các doanh nghiệp thời đại 4.0 đang thay đổi. Xu thế của những công ty mới mở thường là những bàn trẻ đam mê […]</p>
+					</div>
+				</div>
+			</a>
+			</div>
+			<div class="blog-item">
+			<a href="#">
+				<div class="blog-image">
+					<span class="image-post" data-image="img/blog/blog-1.jpg" style="background-image: url(img/blog/blog-3.jpg);"></span>
+				</div>
+				<div class="blog-text">
+					<div class="blog-title">
+						<h4>3 Xu hướng của Machine Learning năm 2018</h4>
+					</div>
+					<span class="date">02/08/2018</span>
+					<div class="blog-description">
+						<p>Năm 2017 chứng kiến sự phát triển nhanh chóng của trí tuệ nhân tạo (AI) và máy học (Machine Learning ML). Từ các nhà cung […]</p>
+					</div>
+				</div>
+			</a>
+			</div>
+		</div>
+	</section>
+	<div class="clear"></div>
+<!-- PEOPLE TAKING ABOUT US -->
+	<section id="feedback">
+		
+	</section>
+<!-- CONTACT AND LOCATION -->
+	<section id="contact">
+		<div id="maps">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.4481977450005!2d105.8442639505382!3d21.014745193563712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab8ea079c829%3A0x1a3ebe79efa873b2!2sTechmaster+Vietnam!5e0!3m2!1sen!2s!4v1533026934679" width="100%" min-height="20px" frameborder="0" style="border:0" allowfullscreen></iframe>
+		</div>
+		<div id="text-address">
+			<p class="blocktitle">Địa chỉ</p><hr>
+			<p> 131 Yen Hoa Street - Cay Giay, Ha Noi, Viet Nam</p>
+			<p>Phone: +84 90 452 97 86</p>
+			<p>Email: gm.tungnguyen@gmail.com</p>
+		</div>
+	</section>	
+	<div class="clear"></div>
+<!-- FOOTER -->
+	<footer id="footer">
+		<div id="copyright">
+			<p>Techmaster &copy; 2018</p>
+		</div>
+		<div id="bottom-menu">
+			<ul id="bottom-nav">
+					<li><a href="">Trang chủ</a></li>
+					<li><a href="">About</a></li>
+					<li><a href="">Gói thành viên</a></li>
+					<li><a href="">Sự kiện</a></li>
+					<li><a href="">Không gian</a></li>
+					<li><a href="">Liên hệ</a></li>
+					<li><a href="">Blog</a></li>
+				</ul>
+		</div>
+	</footer>	
+</div>
+</body>
+</html>

@@ -1,0 +1,495 @@
+@media all and (min-width: 320px) {
+body {
+  background-color: white;
+  margin: 0;
+  font-family: "Open Sans";
+  font-size: 18px;
+  line-height: 31px;
+}
+.clear {
+  clear:both;
+}
+header {
+  position: relative;
+}
+nav#primary-menu {
+  display: none;
+}
+#top-header {
+  background-color: rgb(40, 40, 40);
+  padding: 10px 15px;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 70px;
+}
+#logo {
+  float: left;
+  height: auto;
+}
+#mobile-menu-button {
+  float: right;
+  color: #55be7f;
+  font-size: 30px;
+  margin-top: 8px;
+}
+#big-banner {
+  background-image: url(img/slider/YDXJ0353-1660x1572.jpg);
+  background-attachment: scroll;
+  height: 100vh;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  background-position: center;
+}
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  color: white;
+}
+.banner-text h2 {
+    font-size: 18px;
+    letter-spacing: 0.0725em;
+}
+
+.banner-text p {
+    font-size: 30px;
+    line-height: 50px;
+    margin: 20px 0 30px 0;
+}
+
+p {
+    margin: 10px 0;
+}
+a.buttonlink {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 15px 30px;
+    background: #2ebd7f;
+    font-size: 20px;
+}
+#about-us, #tien-ich {
+    margin: 3px;
+    border: 1px solid #e2e6e4;
+    padding: 10px;
+}
+
+#about-us p {
+    text-align: center;
+    font-size: 20px;
+}
+
+h1 {
+    line-height: 40px;
+}
+* {box-sizing:border-box;}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  min-height: 54.4vh;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 50px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  transform: translate(0, -50%);
+}
+/* SLIDESHOW */
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+/* END SLIDESHOW */
+.mySlides img {
+}
+
+.dotstyle {
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    transform: translate(-50%, 0);
+}
+#tien-ich {
+    text-align: center;
+}
+
+.blocktitle {
+    text-transform: uppercase;
+    font-size: 25px;
+    text-align: center;
+    font-family: arial;
+    font-weight: bold;
+}
+
+.benefititem i {
+    font-size: 50px;
+}
+.benefititem {
+    /* min-height: 20vh; */
+    padding: 20px 0;
+}
+.benefititem i {
+    color: #55be7f;
+}
+#book-a-tour {
+  position: relative;
+  background-image: url(img/slider/IMG_7249-1660x1600.jpg);
+  background-position: center;
+  background-size: cover;
+  min-height: 50vh;
+  text-align: center;
+}
+.overlay {
+  background-color: #333;
+  opacity: 0.7;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.resize-text p{
+  font-size: 22px;
+  line-height: 40px;
+}
+.resize-text {
+  padding: 0 10px;
+  top: 40%;
+}
+.planswrap {display: table;margin: auto;}
+.planitem {
+  width: 80%;
+  margin: 30px auto;
+}
+.price_block {
+    margin: 30px auto;
+    padding: 20px;
+    border: 1px solid #dedede;
+    background: #fbfbfb;
+}
+.price_block_title, .price_block_money, .price_block_link {
+    text-align: center;
+}
+.price_block_title {
+    font-weight: bold;
+    font-size: 30px;
+    margin: 20px 0;
+    color: #55be7f;
+}
+ul.checklist li {
+    list-style-type: none;
+}
+
+ul.checklist {
+    padding: 0;
+}
+
+ul.checklist>li>i {
+    color: #55be7f;
+}
+#text-address {
+    padding: 10px;
+    text-align: center;
+    background: #55be7f;
+    color: white;
+}
+
+ul#bottom-nav li {
+    list-style-type:  none;
+    float: left;
+    text-transform: uppercase;
+    margin: 0 8px;
+    font-size: 13px;
+    line-height: 15px;
+}
+
+#footer {
+    background-color: #282828;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+ul#bottom-nav>li>a {
+    text-decoration: none;
+    color: white;
+}
+#mobile-menu {
+    position: absolute;
+    top: 70px;
+    background-color: #22cca2;
+    width: 100%;
+    min-height: 100vh;
+    font-size: 14px;
+    display: none;
+}
+
+ul#mobile-ul {
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+}
+
+ul#mobile-ul>li {
+    list-style-type: none;
+    padding: 10px 0 10px 40px;
+    border-bottom: 1px solid #b3b3b3;
+}
+
+ul#mobile-ul>li>a {
+    color: white;
+    text-decoration: none;
+}
+
+#mobile-menu.open {
+    display: block;
+    position: fixed;
+    z-index: 2;
+}
+#gallery {
+  display: none;
+}
+#wrap {
+    position: relative;
+}
+
+.blog-item {
+    width: 90%;
+    margin: 20px auto;
+    text-align: center;
+    position: relative;
+    border: 1px solid #d0d0d0;
+}
+
+img {
+    max-width: 100%;
+}
+
+.blog-image img {
+    border: 1px solid #e6e6e6;
+    border-radius: 10px 10px 0 0;
+}
+a {
+  text-decoration: none;
+}
+.blog-item a {
+    color: black;
+}
+
+.blog-image {
+    line-height: 0;
+    min-height: 200px;
+}
+.blog-title h4 {
+    margin: 0;
+    font-weight: 800;
+    font-size: 22px;
+}
+
+.blog-text {
+    background: #fbfbfb;
+    padding: 20px;
+}
+.date {
+  color: #7b7b7b;
+}
+.blog-item a {
+  color: black;
+}
+.image-post {
+    top: 0;
+    left: 0;
+    position: absolute;
+    min-height: 200px;
+    width: 100%;
+}
+#bottom-menu {
+    height: 50px;
+}
+}
+/* DÃƒÂ nh cho mÃƒÂ¡y tÃƒÂ­nh bÃ¡ÂºÂ£ng chiÃ¡Â»Âu dÃ¡Â»Âc */
+@media all and (min-width: 600px) {
+#about-us {
+  min-height: 200px;
+}
+.banner-text h2 {
+    font-size: 35px;
+    letter-spacing: 0.0725em;
+}
+
+.banner-text p {
+    font-size: 60px;
+}
+.benefititem {
+  float: left;
+  width: 50%;
+}
+.benefitswrap {
+    display: table;
+}
+#about-us p {
+    font-size: 25px;
+}
+a.buttonlink {
+    padding: 15px 30px;
+    font-size: 30px;
+    line-height: 60px;
+}
+.resize-text p {
+    margin: 10px 0;
+    font-size: 45px;
+    line-height: 70px;
+}
+.planitem {
+  width: 48%;
+  margin: 0 1%;
+  float: left;
+}
+.price_block {
+    margin: 10px auto;
+}
+.blog-item {
+    width: 48%;
+    float: left;
+    margin: 10px 1%;
+}
+#maps {}
+#text-address {}
+}
+@media all and (min-width: 800px) {...}
+/* DÃƒÂ nh cho mÃƒÂ¡y tÃƒÂ­nh bÃ¡ÂºÂ£ng chiÃ¡Â»Âu ngang */
+@media all and (min-width: 1024px) {
+.planitem, .blog-item {
+    width: 31%;
+}
+.price_block_description {
+    min-height: 500px;
+}
+.benefititem {
+    width: 25%;
+}
+#about-us {
+    width: 30%;
+    float: left;
+    margin: 0;
+    border: none;
+    padding: 20px 5%;
+}
+.slideshow-container {
+    width: 70%;
+    float: left;
+    min-height: auto;
+}
+#coworking-space {}
+.blocktitle {
+  font-size: 30px;
+}
+.ads720x90 {
+  background-color: #333;
+  width: 100%;
+  height: 90px;
+}
+#mobile-menu-button {display: none;}
+nav#primary-menu {
+  display: block;
+  float: right;
+}
+#top-nav {
+    margin: 0;
+}
+ul#top-nav>li {
+    list-style-type:  none;
+    float: left;
+    margin: 10px;
+}
+#top-nav>li>a {
+    color: white;
+}
+a.buttonlink {
+    padding: 10px 20px;
+    font-size: 20px;
+    line-height: 60px;
+}
+.mySlides img {
+    height: 600px;
+}
+}
+ 
+/* DÃƒÂ nh cho mÃƒÂ n hÃƒÂ¬nh desktop */
+@media all and (min-width: 1280px) {...}
